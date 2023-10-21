@@ -1,0 +1,32 @@
+
+Result Size: 705 x 620
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin-left: 200px;
+  background: #5d9ab2 url("C:\Users\iqmal\Documents\BERKULIAH\WAD\WhatsApp_Image_2023-09-24_at_12.31.36-removebg-preview.png") no-repeat top left;
+}
+​
+.center_div {
+  border: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: #d0f0f6;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+</head>
+<body>
+​
+<div class="center_div">
+  <h1>Hello World!</h1>
+  <p>Iqmal Nuriadi <p>
+</div>
+​
+</body>
+</html>
+​
