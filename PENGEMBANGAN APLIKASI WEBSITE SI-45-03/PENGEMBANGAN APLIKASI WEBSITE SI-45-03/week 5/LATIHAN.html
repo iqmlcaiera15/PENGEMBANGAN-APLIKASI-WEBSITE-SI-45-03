@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TELKOM UNIVERISTY</title>
+    </head>
+    <body>
+        <h2> Daftar Siswa </h2>
+        <table border='2' width='400'>
+        <tr>
+            <th width=100>Nis</th>
+            <th width=300>Nama</th>
+        </tr>
+        </table>
+        <?php include 'koneksi.php'; ?>
+        <?php
+            $kueri = 'SELECT * FROM siswa';
+            $hasil = MySQL_query($kueri);
+            if (mysql_num_rows($hasil) > 0) {
+            while($data = mysql_fetch_array($hasil)) {
+                echo "<tr>";
+                echo "<td
+                    width=100>".$data['id_siswa']."</td>";
+                echo "<td
+                    width=300>".$data['nama_siswa']."</td>";
+                echo "</tr>";
+                }
+            } else {
+                echo "<tr>";
+                echo "<td> Data NULL</td>";
+                echo "</tr>";
+            }
+        ?>
+    </body>
+</html>
